@@ -4,19 +4,21 @@
     box-sizing: border-box;
 }
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Karla', sans-serif;
     font-size: 1rem;
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     background-color: hsl(204, 43%, 93%);
-    padding: 50px;
+    
 }
 
 section {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 47% 1fr;
-    width: 100%;
     height: auto;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -104,10 +106,12 @@ p .br {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 680px) {
     body {
+        height: auto;
         font-size: 0.90rem;
-        padding: 30px 20px;
+        width: auto;
+        margin: 30px 20px;
     }
     section {
         grid-template-columns: 1fr;
